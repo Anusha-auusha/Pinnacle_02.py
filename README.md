@@ -1,48 +1,61 @@
 # Pinnacle_02.py
-Alarm Clock
 
-# Monthly Calendar with Reminders
+## Alarm Clock
+
+# Alarm Clock with Customizable Tones and Snooze Options
 
 ## Project Overview
-This project is a Python-based desktop application that displays a monthly calendar, allowing users to set and manage reminders for specific dates. The application is built using the tkinter library, providing a simple and intuitive graphical user interface (GUI). Users can navigate through different months, set reminders on any date, and easily see which dates have reminders set.
+This project is a Python-based alarm clock application that allows users to set alarms with customizable tones and snooze options. The application is built using tkinter for the graphical user interface (GUI) and pygame for audio playback. It provides an intuitive interface for setting alarms, selecting sound files, and managing snooze functionality.
 
 ## Features
-- Monthly Calendar Display: Shows the days of the current month, with navigation options to move between months.
-- Reminder Management: Users can set reminders for specific days. Days with reminders are highlighted in yellow on the calendar.
-- User-Friendly Interface: The application uses a straightforward interface, making it accessible and easy to use.
+- Set Alarms: Specify the time for the alarm in HH format.
+- Customizable Tones: Choose an audio file (WAV format) to use as the alarm sound.
+- Snooze Option: Snooze the alarm for a user-defined duration.
+- User-Friendly Interface: Simple and interactive GUI for ease of use.
 
 ## Technologies Used
 - Python 3.x
 - Tkinter: For creating the graphical user interface.
-- Datetime: For handling and manipulating date and time information.
-- Calendar: For generating and displaying calendar data.
+- Pygame: For playing audio files.
+- Datetime: For handling time and scheduling.
 
 ## Prerequisites
 - Python 3.x: Ensure Python 3.x is installed on your system.
-  
+- Pygame: Install the pygame library for audio playback using pip:
+`pip install pygame`
+
 ## Installation
-No additional installations are required, as tkinter is included with Python by default. Simply download the project files to your local machine.
+No additional installation steps are required besides installing pygame. Simply download the project files to your local machine.
 
 ## Running the Application
 1. Run the Application:
-- python calendar_app.py
-
-2. Using the Application:
-- A window will open showing the calendar for the current month.
-- Use the < and > buttons to navigate between months.
-- Click on any day to set a reminder. Days with reminders are highlighted in yellow.
+- python alarm_clock.py
+  
+2.Using the Application:
+- Set Alarm: Enter the alarm time in HH format.
+- Browse Sound: Select an audio file in WAV format to use as the alarm tone.
+- Set Alarm: Click "Set Alarm" to activate the alarm.
+- Snooze: When the alarm rings, choose to snooze for a specified duration or stop the alarm.
 
 ## Results
-The application successfully allows users to:
-- View a monthly calendar for any month and year.
-- Set and manage reminders for specific days.
-- Easily navigate between months using the provided buttons.
+The application successfully provides a functional alarm clock with the following capabilities:
 
-## Example Usage
-- Setting a Reminder: Click on a day in the calendar, enter a reminder in the prompt, and the day will be highlighted in yellow.
-- Viewing Reminders: Hover over or click on highlighted days to view the reminder for that day.
+- Alarm Scheduling: Users can set alarms for specific times.
+- Customizable Alarms: Users can choose their preferred sound file for the alarm.
+- Snooze Functionality: Users can snooze the alarm for a user-defined duration.
+
+## Example Use Cases
+- Setting an Alarm: Input the time and select a sound file to set an alarm.
+- Snoozing: When the alarm rings, select "Snooze" to delay the alarm for a specified duration.
 
 ## Conclusion
-The Monthly Calendar with Reminders project is a functional and practical tool for basic scheduling and date management. It offers a user-friendly interface that makes it easy to keep track of important dates and events. While it provides core functionality, it also serves as a foundation for more advanced features such as persistent storage, daily or weekly views, and reminder notifications.
+The Alarm Clock with Customizable Tones and Snooze Options project is a practical tool for managing alarms with personalized audio and snooze features. It demonstrates effective use of Python's tkinter for GUI development and pygame for audio handling.
 
-This project demonstrates the use of Python’s tkinter library for GUI development, along with basic date handling using Python’s datetime and calendar modules. It is a solid starting point for anyone looking to build more complex calendar applications.
+While the application meets the core requirements, future enhancements could include:
+
+- Persistent Alarms: Save alarm settings to a file or database for persistence across sessions.
+- Advanced Features: Support for recurring alarms, notifications, or integration with system reminders.
+- Improved UI: Refine the user interface with additional features and better design elements.
+  
+This project serves as a solid foundation for building more complex and feature-rich alarm clock applications.
+
